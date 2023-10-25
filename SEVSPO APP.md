@@ -87,7 +87,7 @@ erDiagram
 
 ## 6. Desain User Experience dan User Interface
 
-![Contoh](./)
+![Contoh](./flow.png)
 
 ## 7. Demonstrasi Video
 
