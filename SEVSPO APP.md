@@ -2,15 +2,15 @@
 
 ## 1.1 Latar Belakang
 
-Sevspo Indonesia merupakan perusahaan UMKM yang berdiri pada bidang sepatu olahraga. Khususnya pada sepatu futsal dan sepak bola (tersedia juga sepatu running dan sendal). Walaupun hanya UMKM, sudah saatnya untuk meningkatkan kualitas dari segi pelayanan terhadap costumer (end user maupun reseller). Dimana dengan adanya aplikasi ini diharap dapat memudahkan costumer juga memudahkan perusahaan dalam melayani. 
+Sevspo Indonesia merupakan perusahaan UMKM yang berdiri pada bidang sepatu olahraga. Khususnya pada sepatu futsal dan sepak bola (tersedia juga sepatu running dan sendal). Walaupun hanya UMKM, sudah saatnya untuk meningkatkan kualitas dari segi pelayanan terhadap costumer (end user maupun reseller). Dimana dengan adanya aplikasi ini diharap dapat memudahkan costumer juga memudahkan perusahaan dalam melayani. Aplikasi SEVSPO ini akan menjadi kekuatan untuk brand Sevspo ini sendiri dalam services dan branding.
 
-(Saat ini saya bekerja sebagai editor di Sevspo dan akan mencoba ke bidang lain sesuai pendidikan yang saya jalani seperti saat ini belajar membuat projek aplikasi brand.)
+(Saat ini saya bekerja sebagai editor di Sevspo dan akan mencoba ke bidang lain sesuai pendidikan yang saya jalani seperti saat ini belajar membuat projek aplikasi brand).
 
 ## 1.2. Deksripsi Teknologi Informasi
 
-Aplikasi SEVSPO ini dibuat dengan tujuan untuk penguatan dari brand itu sendiri. Tujuan akhir lainnya untuk mempermudah interaksi brand dengan costumer seperti adanya e-commerce sendiri dalam aplikasi, adanya komunitas pengguna yang dapat berbagi momen bersama brand Sevspo, dsb.
+Aplikasi SEVSPO ini dibuat dengan tujuan untuk penguatan dari brand itu sendiri. Tujuan akhir lainnya untuk mempermudah interaksi brand dengan costumer seperti adanya e-commerce sendiri dalam aplikasi, adanya komunitas pengguna yang dapat berbagi momen bersama brand Sevspo, dan bisa menggaet lebih banyak reseller, dsb.
 
-(Sekarang masih menggarap tujuan untuk penguatan brand dimana brand menyiapkan aplikasi untuk mempermudah costumer melihat produk dari Sevspo yaitu seperti catalog.)
+(Sekarang masih menggarap tujuan untuk penguatan brand dimana brand menyiapkan aplikasi untuk mempermudah costumer melihat produk dari Sevspo yaitu seperti catalog).
 
 ## 1.3. Branding
 
@@ -49,21 +49,55 @@ Aplikasi SEVSPO ini dibuat dengan tujuan untuk penguatan dari brand itu sendiri.
 | User | Membuat postingan | Pamer sepatu sevspo dan mabol | ⭐⭐ |
 | User | Membalas komen | Membalas komen dari komunitas | ⭐⭐ |
 | User | Mensort sepatu | Memfilter sepatu | ⭐⭐ |
+| User | Join reseller  | Menjadi reseller | ⭐⭐ |
 ## 3. Struktur Data
 
 ```mermaid
 erDiagram
-    USER ||--o{ BRAND : Services
+USER{
+Int Id-Pengguna
+String Username
+String Nama
+String Email
+String Password
+Image Profil
+}
+BRAND{
+Int Id_Admin
+String Admin}
+SERVICES{
+Int Id-PenggunaChat
+String UsernameChat
+Int Id_AdminChat
+String AdminChat
+String Chat
+Image ChatImage
+}
+POSTINGAN{
+Int Id-PenggunaPost
+String UsernamePost
+Image FotoPost
+String CaptionPost
+Int Id-PenggunaSuka
+String UsernameSuka
+Int Id-PenggunaKomen
+String UsernameKomen
+Sting IsiKomen
+}
+    USER ||--o{ BRAND : Interaksi
     USER ||--|{ USER-LAIN : Interaksi
+    USER ||--|{ POSTINGAN : Komunitas
+    USER-LAIN ||--|{ POSTINGAN : Komunitas
+    USER ||--o{ SERVICES : Layanan
+    BRAND ||--o{ SERVICES : Layanan
+
 ```
 
 ## 4. Arsitektur Sistem
 
 ```mermaid
-erDiagram
-    Database-mySQL-atau-MongoDB ||--|{ BackEnd-JavaScript : Database-BackEnd
-    BackEnd-JavaScript ||--|{ FrontEnd-JavaScript : BackEnd-FrontEnd
-    FrontEnd-JavaScript ||--|{ MobileApp-JavaScript-ReactNative : Aplikasi
+graph TD;
+Database-mySQL-atau-MongoDB <--> BackEnd-JavaScriptDatabase-BackEnd <--> BackEnd-JavaScript <-->  FrontEnd-JavaScriptBackEnd-FrontEnd <-->  FrontEnd-JavaScript <-->  MobileApp-JavaScript-ReactNative-Aplikasi
 ```
 
 ## 5. Teknologi, Library, dan Framework
@@ -79,6 +113,7 @@ erDiagram
   - Emulator android
   - Visual Studio Code
   - mySQL/MongoDB
+  - Adobe Photoshop
 - Library dan Framework:
   - React Native
   - JavaScript
