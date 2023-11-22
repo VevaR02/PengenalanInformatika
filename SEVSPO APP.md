@@ -33,7 +33,9 @@ Aplikasi SEVSPO ini dibuat dengan tujuan untuk penguatan dari brand itu sendiri.
 
 | **Sebagai** | **Bisa** | **Untuk** | **Prioritas** |
 | --- | --- | --- | ---------- |
-| User | Melihat informasi yang dimuat mengenai brand | Mengetahui informasi yang dimuat mengenai brand | ⭐⭐⭐⭐⭐ |  |
+| User | Membuat akun dengan mudah | Bisa login akun aplikasi sevspo | ⭐⭐⭐⭐⭐ |
+| User | Masuk dan login dengan mudah | Bisa masuk untuk menjalankan fitur aplikasi | ⭐⭐⭐⭐⭐ |
+| User | Melihat informasi yang dimuat mengenai brand | Mengetahui informasi yang dimuat mengenai brand | ⭐⭐⭐⭐⭐ |
 | User | Klik informasi yang dimuat mengenai brand | Melihat informasi lengkap yang dimuat mengenai brand | ⭐⭐⭐⭐⭐ |
 | User | Mengklik catalog sepatu | Melihat-lihat sepatu | ⭐⭐⭐⭐⭐ |
 | User | Mengklik sepatu pilihan | Melihat detail dari sepatu yang dipilih | ⭐⭐⭐⭐|
@@ -50,6 +52,9 @@ Aplikasi SEVSPO ini dibuat dengan tujuan untuk penguatan dari brand itu sendiri.
 | User | Membalas komen | Membalas komen dari komunitas | ⭐⭐ |
 | User | Mensort sepatu | Memfilter sepatu | ⭐⭐ |
 | User | Join reseller  | Menjadi reseller | ⭐⭐ |
+| Admin | Mengupdate catalog sepatu | Memperbarui stok, menambah atau mengurangi catalog | ⭐⭐ |
+| Admin | Chat komunikasi user | Menjawab dan berkomunikasi dengan user | ⭐⭐ |
+| Admin | Mengupdate poster design | Menampilkan poster sepatu sesuai keinginan brand dengan mengganti menambah atau menghapus | ⭐⭐ |
 ## 3. Struktur Data
 
 ```mermaid
