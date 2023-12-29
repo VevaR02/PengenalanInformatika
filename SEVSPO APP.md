@@ -163,24 +163,24 @@ Database-mySQL-atau-MongoDB <--> BackEnd-JavaScriptDatabase-BackEnd <--> BackEnd
 
 ## 6. Desain User Experience dan User Interface
 
-![Contoh](./flow.png)
+![Desain Low Fidelity/ secara kasar](./flow.png)
 
 ## 7. Demonstrasi Video
 
-Link youtube nya
+(https://youtu.be/mc_MWisHQ_E)
 
 ## 8. Bagaimana mesin komputasi dan sistem operasi berperan dalam produk teknologi informasimu ?
 
-Link youtube nya di detik jawaban ini
+(https://youtu.be/mc_MWisHQ_E)
 
 ## 9. Bagaimana algoritma, struktur data, dan bahasa pemrograman berperan dalam produk teknologi informasimu ?
 
-Link youtube nya di detik jawaban ini
+(https://youtu.be/mc_MWisHQ_E)
 
 ## 10. Bagaimana metode pengembangan perangkat lunak / Software Development Life Cycle berperan dalam produk teknologi informasimu ?
 
-Link youtube nya di detik jawaban ini
+(https://youtu.be/mc_MWisHQ_E)
 
 ## 11. Bagaimana database / sistem basis data berperan dalam produk teknologi informasimu ?
 
-Link youtube nya di detik jawaban ini
+(https://youtu.be/mc_MWisHQ_E)
